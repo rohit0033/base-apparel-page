@@ -1,0 +1,207 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+
+.logo-image{
+    margin: 2.8rem 2rem;
+}
+.hero-mobile{
+    display: none;
+}
+.hero-deskstop{
+    display: none;
+}
+
+.hero-image img{
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.big-heading{
+    text-transform: uppercase;
+    
+    font-size: 3rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+    margin-top: 3.1rem;
+    margin-bottom: 1.6rem ;
+}
+.info-deskstop{
+    display: none;
+}
+
+.info-mobile p{
+    font-size: 1rem;
+    color:hsl(0, 36%, 70%);
+    line-height: 1.6;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+
+}
+.big-heading h1 span{
+    color:hsl(0, 36%, 70%) ;
+    font-weight: 300;
+}
+
+
+form input{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.8rem 0rem;
+    border: 2px solid rgb(89, 77, 77);
+    border-radius: 30px;
+    width: 100%;
+    margin: 2rem 0 0;
+    color:  rgb(89, 77, 77);
+}
+
+form input::placeholder{
+    font-display:l;
+    color:  rgb(89, 77, 77);
+    font-weight: lighter;
+
+
+}
+
+form label{
+    position: absolute;
+    top: 127%;
+    transform: translate(127%);
+    right: 6.9rem;
+    display: none;
+}
+
+form button{
+    position: absolute;
+    top: 118%;
+    right: 0;
+    transform: translateY(118%);
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%),  hsl(0, 74%, 74%)) ;
+    border: none;
+    border-radius: 30px;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover{
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 80%, 86%));
+}
+
+.error{
+    color: rgb(231, 77, 77);
+    text-align: left;
+    margin-top: 0.5rem;
+    display: none;
+}
+@media(min-width: 768px){
+    body{
+        background: url("./images/bg-pattern-desktop.svg") no-repeat center/cover;
+    }
+
+    .hero-image{
+        display: none;
+    }
+    .hero-deskstop{
+        display: flex;
+      
+    }
+
+    .container{
+        display: flex;
+        justify-content:left;
+        width: 45%;
+    }
+
+    .logo-image{
+        margin-left: 12rem;
+
+    }
+    .big-heading{
+        font-size: 4rem;
+        width: 500px;
+        margin-left: 7rem;
+    }
+    /* .info::after{
+        content: "Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.";
+    } */
+    .info-mobile{
+        display: none;
+
+    }
+    .info-deskstop{
+        display: block;
+        margin-left: 8rem;
+        font-size: 1rem;
+    color:hsl(0, 36%, 70%);
+    line-height: 1.6;
+    font-weight: 600;
+    }
+    .info p {
+        
+        width: 700px;
+        line-height: 2;
+    }
+    form input{
+        width: 500px;
+    }
+
+    form button{
+        right: 900px;
+        top: 560px;
+    }
+    form label{
+        right: 1012px;
+        top: 630px;
+
+    }
+    .error{
+        margin-left: 5rem;
+    }
+
+
+    .image{
+        display: flex;
+        flex-direction: column;
+       ;
+        justify-content: right;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 50%;
+        
+    
+        
+    }
+    
+    
+}
+
